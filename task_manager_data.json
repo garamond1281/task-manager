@@ -1,0 +1,1827 @@
+[
+  {
+    "model": "workers.position",
+    "pk": 1,
+    "fields": { "name": "Developer" }
+  },
+  {
+    "model": "workers.position",
+    "pk": 2,
+    "fields": { "name": "Project Manager" }
+  },
+  {
+    "model": "workers.position",
+    "pk": 3,
+    "fields": { "name": "QA" }
+  },
+  {
+    "model": "workers.position",
+    "pk": 4,
+    "fields": { "name": "Designer" }
+  },
+  {
+    "model": "workers.position",
+    "pk": 5,
+    "fields": { "name": "DevOps" }
+  },
+  {
+    "model": "task.tasktype",
+    "pk": 1,
+    "fields": { "name": "Bug" }
+  },
+  {
+    "model": "task.tasktype",
+    "pk": 2,
+    "fields": { "name": "New feature" }
+  },
+  {
+    "model": "task.tasktype",
+    "pk": 3,
+    "fields": { "name": "Breaking change" }
+  },
+  {
+    "model": "task.tasktype",
+    "pk": 4,
+    "fields": { "name": "Refactoring" }
+  },
+  {
+    "model": "task.tasktype",
+    "pk": 5,
+    "fields": { "name": "QA" }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "Admin",
+      "last_name": "User",
+      "email": "admin@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "john_doe",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "jane_smith",
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "alex_dev",
+      "first_name": "Alex",
+      "last_name": "Brown",
+      "email": "alex@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "maria_ui",
+      "first_name": "Maria",
+      "last_name": "Garcia",
+      "email": "maria@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 4,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "david_ops",
+      "first_name": "David",
+      "last_name": "Wilson",
+      "email": "david@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 5,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "emily_qa",
+      "first_name": "Emily",
+      "last_name": "Davis",
+      "email": "emily@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "michael_backend",
+      "first_name": "Michael",
+      "last_name": "Miller",
+      "email": "michael@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sarah_pm",
+      "first_name": "Sarah",
+      "last_name": "Taylor",
+      "email": "sarah@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "chris_fullstack",
+      "first_name": "Chris",
+      "last_name": "Anderson",
+      "email": "chris@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "oliver_dev",
+      "first_name": "Oliver",
+      "last_name": "Thomas",
+      "email": "oliver@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 12,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sophia_ux",
+      "first_name": "Sophia",
+      "last_name": "Jackson",
+      "email": "sophia@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 4,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 13,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "james_qa",
+      "first_name": "James",
+      "last_name": "White",
+      "email": "james@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 14,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "emma_pm",
+      "first_name": "Emma",
+      "last_name": "Harris",
+      "email": "emma@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 15,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "lucas_sysadmin",
+      "first_name": "Lucas",
+      "last_name": "Martin",
+      "email": "lucas@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 5,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 16,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "charlotte_dev",
+      "first_name": "Charlotte",
+      "last_name": "Thompson",
+      "email": "charlotte@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 17,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "daniel_backend",
+      "first_name": "Daniel",
+      "last_name": "Garcia",
+      "email": "daniel@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 18,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "mia_ui",
+      "first_name": "Mia",
+      "last_name": "Martinez",
+      "email": "mia@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 4,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 19,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "benjamin_qa",
+      "first_name": "Benjamin",
+      "last_name": "Robinson",
+      "email": "benjamin@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 20,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ava_ops",
+      "first_name": "Ava",
+      "last_name": "Clark",
+      "email": "ava@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 5,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 21,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ethan_dev",
+      "first_name": "Ethan",
+      "last_name": "Rodriguez",
+      "email": "ethan@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 1,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 22,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "isabella_design",
+      "first_name": "Isabella",
+      "last_name": "Lewis",
+      "email": "isabella@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 4,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 23,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "william_qa",
+      "first_name": "William",
+      "last_name": "Lee",
+      "email": "william@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 3,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 24,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "harper_pm",
+      "first_name": "Harper",
+      "last_name": "Walker",
+      "email": "harper@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 25,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$rS7A6T0J6lJ2$L8qN+UvH6sR41iUu8G/1C9q3bA=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "mason_ops",
+      "first_name": "Mason",
+      "last_name": "Hall",
+      "email": "mason@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-10-01T12:00:00Z",
+      "position": 5,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 1,
+    "fields": {
+      "name": "Fix Dashboard for Vacancies",
+      "description": "Resolve layout overflow and update chart rendering logic on the vacancies dashboard page.",
+      "deadline": "2026-10-15T18:00:00Z",
+      "is_completed": false,
+      "priority": "Urgent",
+      "task_type": 1,
+      "assignees": [2, 3]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 2,
+    "fields": {
+      "name": "Add sign-in with Google button",
+      "description": "Implement OAuth2 authentication via Google account for all workers.",
+      "deadline": "2026-10-20T18:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [2, 8]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 3,
+    "fields": {
+      "name": "Update User API Endpoints",
+      "description": "Refactor legacy user registration API endpoints to REST standards.",
+      "deadline": "2026-10-22T12:00:00Z",
+      "is_completed": true,
+      "priority": "Medium",
+      "task_type": 3,
+      "assignees": [4, 10]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 4,
+    "fields": {
+      "name": "Design Dark Mode Theme",
+      "description": "Create Figma mockups for Dark Mode interface in Material Design format.",
+      "deadline": "2026-10-18T16:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 2,
+      "assignees": [5, 12, 22]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 5,
+    "fields": {
+      "name": "Configure Docker Staging Container",
+      "description": "Set up multi-stage Dockerfile for staging server deployment.",
+      "deadline": "2026-10-12T10:00:00Z",
+      "is_completed": true,
+      "priority": "Urgent",
+      "task_type": 2,
+      "assignees": [6, 15, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 6,
+    "fields": {
+      "name": "Automate E2E Testing with Cypress",
+      "description": "Write automated end-to-end regression test scripts for the checkout module.",
+      "deadline": "2026-10-25T17:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 5,
+      "assignees": [3, 7, 13, 23]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 7,
+    "fields": {
+      "name": "Optimize PostgreSQL Database Queries",
+      "description": "Add missing N+1 select_related indexes to prevent slow response times.",
+      "deadline": "2026-10-14T11:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 4,
+      "assignees": [8, 10, 17, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 8,
+    "fields": {
+      "name": "Prepare Sprint Roadmap Q4",
+      "description": "Draft feature milestones and assign capacity budgets for upcoming sprints.",
+      "deadline": "2026-10-10T09:00:00Z",
+      "is_completed": true,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [1, 9, 14, 24]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 9,
+    "fields": {
+      "name": "Fix Memory Leak in Background Worker",
+      "description": "Investigate Celery task queue consumption spike when processing PDFs.",
+      "deadline": "2026-10-11T15:00:00Z",
+      "is_completed": false,
+      "priority": "Urgent",
+      "task_type": 1,
+      "assignees": [4, 6, 11]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 10,
+    "fields": {
+      "name": "Redesign Navigation Bar UI",
+      "description": "Implement modern responsive navbar with Material icons and mobile drawer.",
+      "deadline": "2026-10-28T18:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 2,
+      "assignees": [2, 5, 18, 22]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 11,
+    "fields": {
+      "name": "Audit Security Dependencies",
+      "description": "Run safety-check and pip-audit to patch vulnerable Python packages.",
+      "deadline": "2026-10-13T14:00:00Z",
+      "is_completed": true,
+      "priority": "High",
+      "task_type": 4,
+      "assignees": [6, 8, 20, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 12,
+    "fields": {
+      "name": "Fix Session Timeout Handling",
+      "description": "Ensure users receive graceful session expiration alerts before automatic logout.",
+      "deadline": "2026-10-19T13:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 1,
+      "assignees": [2, 10, 16]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 13,
+    "fields": {
+      "name": "Create Swagger API Documentation",
+      "description": "Integrate drf-spectacular to automatically generate OpenAPI 3.0 documentation.",
+      "deadline": "2026-10-30T17:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 2,
+      "assignees": [4, 17, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 14,
+    "fields": {
+      "name": "Perform Load Testing on Checkout",
+      "description": "Simulate 10,000 concurrent requests using Locust script.",
+      "deadline": "2026-10-24T16:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 5,
+      "assignees": [6, 7, 19, 23]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 15,
+    "fields": {
+      "name": "Migrate Media Files to AWS S3",
+      "description": "Configure django-storages and S3 bucket policies for uploaded avatar images.",
+      "deadline": "2026-10-21T11:00:00Z",
+      "is_completed": true,
+      "priority": "High",
+      "task_type": 3,
+      "assignees": [6, 15, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 16,
+    "fields": {
+      "name": "Fix CORS Headers Configuration",
+      "description": "Allow domain origin headers for local frontend development environments.",
+      "deadline": "2026-10-16T10:00:00Z",
+      "is_completed": true,
+      "priority": "Urgent",
+      "task_type": 1,
+      "assignees": [8, 11]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 17,
+    "fields": {
+      "name": "Implement CSV Export for Reports",
+      "description": "Add action in Django admin to export filtered tasks into downloadable CSV files.",
+      "deadline": "2026-10-27T15:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 2,
+      "assignees": [2, 4, 16]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 18,
+    "fields": {
+      "name": "Conduct Accessibility (a11y) Review",
+      "description": "Verify screen reader compatibility and ARIA attributes across main templates.",
+      "deadline": "2026-10-29T12:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 5,
+      "assignees": [5, 7, 12, 22]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 19,
+    "fields": {
+      "name": "Clean Up Legacy CSS Classes",
+      "description": "Remove unused Bootstrap 4 CSS rules and inline style attributes.",
+      "deadline": "2026-10-23T18:00:00Z",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 4,
+      "assignees": [5, 18]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 20,
+    "fields": {
+      "name": "Setup Prometheus Monitoring Metrics",
+      "description": "Expose application health and HTTP response time metrics for Grafana dashboards.",
+      "deadline": "2026-10-31T17:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 2,
+      "assignees": [6, 20, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 21,
+    "fields": {
+      "name": "Integrate Sentry Error Tracking",
+      "description": "Add Sentry SDK to capture production crashes and unhandled exceptions.",
+      "deadline": "2026-11-02T14:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [8, 15]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 22,
+    "fields": {
+      "name": "Fix Multi-Factor Authentication Bug",
+      "description": "Resolve issue where TOTP codes are intermittently rejected during login.",
+      "deadline": "2026-11-03T10:00:00Z",
+      "is_completed": false,
+      "priority": "Urgent",
+      "task_type": 1,
+      "assignees": [10, 17, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 23,
+    "fields": {
+      "name": "Add Multi-language Support (i18n)",
+      "description": "Configure Django translation files for Ukrainian and English locales.",
+      "deadline": "2026-11-05T18:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 2,
+      "assignees": [2, 11, 16]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 24,
+    "fields": {
+      "name": "Refactor Form Validation Logic",
+      "description": "Move inline field validation from views into clean custom Form/Serializer classes.",
+      "deadline": "2026-11-01T16:00:00Z",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 4,
+      "assignees": [4, 8, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 25,
+    "fields": {
+      "name": "Setup Redis Caching for Hot Queries",
+      "description": "Cache worker list and task count metrics to reduce DB load.",
+      "deadline": "2026-11-04T12:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [6, 17]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 26,
+    "fields": {
+      "name": "Test Payment Gateway Webhooks",
+      "description": "Create mock Stripe event payloads to test idempotency in payment handling.",
+      "deadline": "2026-11-06T15:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 5,
+      "assignees": [3, 13, 19, 23]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 27,
+    "fields": {
+      "name": "Update Landing Page Graphic Assets",
+      "description": "Replace outdated hero images with new vector SVG illustrations.",
+      "deadline": "2026-11-02T11:00:00Z",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 2,
+      "assignees": [5, 12, 18, 22]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 28,
+    "fields": {
+      "name": "Fix PDF Export Layout Alignment",
+      "description": "Adjust CSS print rules for ReportLab/WeasyPrint generation.",
+      "deadline": "2026-11-07T17:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 1,
+      "assignees": [4, 16]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 29,
+    "fields": {
+      "name": "Review AWS IAM Permission Roles",
+      "description": "Enforce least-privilege policies across all S3 and EC2 service roles.",
+      "deadline": "2026-11-08T13:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 4,
+      "assignees": [15, 20, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 30,
+    "fields": {
+      "name": "Organize Quarterly Retrospective Meeting",
+      "description": "Collect feedback notes from team leads and prepare discussion slides.",
+      "deadline": "2026-11-09T10:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 2,
+      "assignees": [1, 9, 14, 24]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 31,
+    "fields": {
+      "name": "Fix Broken Links in Email Templates",
+      "description": "Update transactional email URLs to point to current domain domain names.",
+      "deadline": "2026-11-02T09:00:00Z",
+      "is_completed": true,
+      "priority": "Urgent",
+      "task_type": 1,
+      "assignees": [2, 11]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 32,
+    "fields": {
+      "name": "Implement Rate Limiting on Login",
+      "description": "Protect authentication endpoints against brute-force password guessing.",
+      "deadline": "2026-11-10T16:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [8, 10, 17, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 33,
+    "fields": {
+      "name": "Upgrade Django Framework to 5.1",
+      "description": "Test test-suite against the latest minor release and patch deprecated methods.",
+      "deadline": "2026-11-12T18:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 3,
+      "assignees": [4, 6, 8, 10]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 34,
+    "fields": {
+      "name": "Conduct Cross-Browser Compatibility Test",
+      "description": "Verify grid layout consistency across Safari, Firefox, and Edge.",
+      "deadline": "2026-11-11T14:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 5,
+      "assignees": [3, 7, 12, 18, 23]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 35,
+    "fields": {
+      "name": "Setup Automated Database Backups",
+      "description": "Configure pg_dump nightly cron job with automatic upload to encrypted S3 bucket.",
+      "deadline": "2026-11-13T11:00:00Z",
+      "is_completed": true,
+      "priority": "Urgent",
+      "task_type": 2,
+      "assignees": [15, 20, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 36,
+    "fields": {
+      "name": "Fix Timezone Mismatch in Calendar View",
+      "description": "Ensure datetime objects are rendered in local user browser timezone.",
+      "deadline": "2026-11-05T10:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 1,
+      "assignees": [2, 16]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 37,
+    "fields": {
+      "name": "Create Mobile View Mockups for Tasks",
+      "description": "Design responsive card layouts for small screen sizes.",
+      "deadline": "2026-11-14T17:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 2,
+      "assignees": [5, 12, 22]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 38,
+    "fields": {
+      "name": "Refactor Search Filtering Logic",
+      "description": "Use Q objects for combined searching across task name, description, and worker names.",
+      "deadline": "2026-11-15T15:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 4,
+      "assignees": [10, 11, 17, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 39,
+    "fields": {
+      "name": "Audit Static Asset Delivery via CDN",
+      "description": "Verify CloudFront cache headers and compression settings for JS/CSS files.",
+      "deadline": "2026-11-16T12:00:00Z",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 4,
+      "assignees": [6, 15]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 40,
+    "fields": {
+      "name": "Write Integration Tests for Worker Views",
+      "description": "Add test cases covering DetailView, CreateView, and DeleteView for workers.",
+      "deadline": "2026-11-17T18:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 5,
+      "assignees": [7, 13, 19, 23]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 41,
+    "fields": {
+      "name": "Fix File Upload Size Limit Error",
+      "description": "Increase nginx max_body_size and Django DATA_UPLOAD_MAX_MEMORY_SIZE.",
+      "deadline": "2026-11-04T09:00:00Z",
+      "is_completed": true,
+      "priority": "Urgent",
+      "task_type": 1,
+      "assignees": [6, 15, 20, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 42,
+    "fields": {
+      "name": "Implement WebSocket Real-time Notifications",
+      "description": "Use Django Channels to send push notifications when tasks are assigned.",
+      "deadline": "2026-11-20T17:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [8, 10, 17, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 43,
+    "fields": {
+      "name": "Prepare User Training Documentation",
+      "description": "Write user guide for task assignment workflow and status tracking.",
+      "deadline": "2026-11-18T13:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 2,
+      "assignees": [9, 14, 24]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 44,
+    "fields": {
+      "name": "Fix Pagination State Reset Bug",
+      "description": "Preserve GET search query parameters when clicking page navigation buttons.",
+      "deadline": "2026-11-07T14:00:00Z",
+      "is_completed": true,
+      "priority": "Medium",
+      "task_type": 1,
+      "assignees": [2, 16]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 45,
+    "fields": {
+      "name": "Configure SSL Certificates Renewal",
+      "description": "Verify certbot auto-renew cron schedule and fallback certificate chain.",
+      "deadline": "2026-11-19T10:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 4,
+      "assignees": [15, 20, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 46,
+    "fields": {
+      "name": "Benchmark Search Response Speeds",
+      "description": "Measure query latency under 50,000 simulated database records.",
+      "deadline": "2026-11-21T16:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 5,
+      "assignees": [3, 7, 19, 23]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 47,
+    "fields": {
+      "name": "Design Custom 404 & 500 Error Pages",
+      "description": "Create user-friendly branded error pages with quick navigation links back to dashboard.",
+      "deadline": "2026-11-22T12:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 2,
+      "assignees": [5, 18, 22]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 48,
+    "fields": {
+      "name": "Fix Race Condition in Task Assignment",
+      "description": "Wrap task assignment update block in select_for_update transaction.",
+      "deadline": "2026-11-08T11:00:00Z",
+      "is_completed": true,
+      "priority": "Urgent",
+      "task_type": 1,
+      "assignees": [8, 10, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 49,
+    "fields": {
+      "name": "Clean Up Unused Media File Storage",
+      "description": "Write management command to purge orphaned upload files from S3 bucket.",
+      "deadline": "2026-11-23T15:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 4,
+      "assignees": [11, 15]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 50,
+    "fields": {
+      "name": "Final Release Audit & Readiness Check",
+      "description": "Complete final verification checklist prior to launching version 2.0 to production.",
+      "deadline": "2026-11-25T18:00:00Z",
+      "is_completed": false,
+      "priority": "Urgent",
+      "task_type": 2,
+      "assignees": [1, 9, 14, 20, 24]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 51,
+    "fields": {
+      "name": "Set Up GraphQL Endpoint",
+      "description": "Integrate Graphene-Django to offer a flexible GraphQL query alternative.",
+      "deadline": "2026-11-26T14:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 2,
+      "assignees": [8, 10, 17]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 52,
+    "fields": {
+      "name": "Fix Incorrect Breadcrumb Links",
+      "description": "Repair broken dynamic breadcrumb navigation paths on task detail views.",
+      "deadline": "2026-11-10T11:00:00Z",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 1,
+      "assignees": [2, 16]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 53,
+    "fields": {
+      "name": "Refactor Signal Handlers",
+      "description": "Move post_save receiver logic out of models.py into a dedicated signals module.",
+      "deadline": "2026-11-27T16:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 4,
+      "assignees": [4, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 54,
+    "fields": {
+      "name": "Add Password Reset via SMS",
+      "description": "Integrate Twilio SDK to allow workers to recover accounts via SMS verification code.",
+      "deadline": "2026-11-28T18:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [8, 11]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 55,
+    "fields": {
+      "name": "Fix Time-Zone Offset in Reports",
+      "description": "Correct UTC offset calculations in weekly productivity PDF reports.",
+      "deadline": "2026-11-12T15:00:00Z",
+      "is_completed": true,
+      "priority": "Medium",
+      "task_type": 1,
+      "assignees": [4, 16]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 56,
+    "fields": {
+      "name": "Configure ElasticSearch Indexing",
+      "description": "Set up full-text indexing for task titles and long description text fields.",
+      "deadline": "2026-11-29T17:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [6, 17, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 57,
+    "fields": {
+      "name": "Perform Penetration Testing",
+      "description": "Run vulnerability scans using OWASP ZAP to check XSS and SQL injection risks.",
+      "deadline": "2026-11-30T13:00:00Z",
+      "is_completed": false,
+      "priority": "Urgent",
+      "task_type": 5,
+      "assignees": [7, 13, 23]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 58,
+    "fields": {
+      "name": "Update Font Assets to WOFF2",
+      "description": "Replace legacy TTF font files with optimized WOFF2 versions to speed up load time.",
+      "deadline": "2026-11-14T10:00:00Z",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 4,
+      "assignees": [5, 18, 22]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 59,
+    "fields": {
+      "name": "Implement Soft Delete for Workers",
+      "description": "Add is_deleted boolean field instead of physically purging worker records from DB.",
+      "deadline": "2026-12-01T12:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 3,
+      "assignees": [2, 10]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 60,
+    "fields": {
+      "name": "Automate Release Deployment Pipeline",
+      "description": "Add GitHub Actions workflow steps for automatic deploy on push to main branch.",
+      "deadline": "2026-12-02T16:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [6, 15, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 61,
+    "fields": {
+      "name": "Fix Toast Notification Stacking",
+      "description": "Ensure flash messages don't overlap when multiple alerts trigger simultaneously.",
+      "deadline": "2026-11-15T09:00:00Z",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 1,
+      "assignees": [2, 5]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 62,
+    "fields": {
+      "name": "Add Kanban Board View for Tasks",
+      "description": "Implement drag-and-drop task status board using HTML5 Drag and Drop API.",
+      "deadline": "2026-12-03T18:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [2, 18, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 63,
+    "fields": {
+      "name": "Audit API Throttling Rules",
+      "description": "Adjust AnonRateThrottle and UserRateThrottle parameters in REST framework settings.",
+      "deadline": "2026-12-04T11:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 4,
+      "assignees": [8, 17]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 64,
+    "fields": {
+      "name": "Test Safari Video Playback",
+      "description": "Verify inline HTML5 video player functions properly on iOS Safari browsers.",
+      "deadline": "2026-11-16T14:00:00Z",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 5,
+      "assignees": [3, 19]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 65,
+    "fields": {
+      "name": "Implement Task Email Reminders",
+      "description": "Schedule daily Celery beat task to send reminder emails for tasks due within 24h.",
+      "deadline": "2026-12-05T15:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 2,
+      "assignees": [4, 11]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 66,
+    "fields": {
+      "name": "Fix Table Sorting Bug in Admin",
+      "description": "Correct custom ordering tuple in Django model admin configuration.",
+      "deadline": "2026-11-17T10:00:00Z",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 1,
+      "assignees": [10, 16]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 67,
+    "fields": {
+      "name": "Migrate InfluxDB Telemetry Data",
+      "description": "Transfer historical application telemetry metrics to central time-series database.",
+      "deadline": "2026-12-06T17:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 3,
+      "assignees": [15, 20, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 68,
+    "fields": {
+      "name": "Design Empty State Illustrations",
+      "description": "Draw custom SVG graphics displayed when task list or search results are empty.",
+      "deadline": "2026-12-07T12:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 2,
+      "assignees": [5, 12, 22]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 69,
+    "fields": {
+      "name": "Fix Cookie SameSite Attribute Leak",
+      "description": "Set explicit Lax or Strict policies on response cookies to prevent CSRF exploits.",
+      "deadline": "2026-11-18T13:00:00Z",
+      "is_completed": true,
+      "priority": "Urgent",
+      "task_type": 1,
+      "assignees": [8, 10]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 70,
+    "fields": {
+      "name": "Add Export Data Action for GDPR",
+      "description": "Allow individual workers to download a JSON archive of their complete personal data.",
+      "deadline": "2026-12-08T16:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [2, 11, 24]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 71,
+    "fields": {
+      "name": "Optimize Image Compression Utility",
+      "description": "Add Pillow image optimization step before writing uploaded avatars to S3.",
+      "deadline": "2026-12-09T14:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 4,
+      "assignees": [4, 17]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 72,
+    "fields": {
+      "name": "Fix Pagination Count Query Overhead",
+      "description": "Replace default Django paginator count with cached row count estimate for large tables.",
+      "deadline": "2026-11-19T11:00:00Z",
+      "is_completed": true,
+      "priority": "High",
+      "task_type": 1,
+      "assignees": [8, 10, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 73,
+    "fields": {
+      "name": "Write Unit Tests for Custom Tags",
+      "description": "Cover custom template tags and filters with 100% unit test assertion coverage.",
+      "deadline": "2026-12-10T18:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 5,
+      "assignees": [7, 13, 23]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 74,
+    "fields": {
+      "name": "Configure Nginx Rate Limiting",
+      "description": "Restrict incoming HTTP requests at Nginx level to defend against DoS attacks.",
+      "deadline": "2026-12-11T10:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 4,
+      "assignees": [15, 20, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 75,
+    "fields": {
+      "name": "Fix Broken Select2 Multi-Choice Dropdown",
+      "description": "Update Select2 JS initialization script to work inside modal popups.",
+      "deadline": "2026-11-20T15:00:00Z",
+      "is_completed": true,
+      "priority": "Medium",
+      "task_type": 1,
+      "assignees": [2, 18]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 76,
+    "fields": {
+      "name": "Create Onboarding Tour Modal",
+      "description": "Add step-by-step interactive onboarding guide for newly registered team members.",
+      "deadline": "2026-12-12T17:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 2,
+      "assignees": [5, 9, 24]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 77,
+    "fields": {
+      "name": "Refactor Model Managers",
+      "description": "Implement custom QuerySet methods like active() and completed() for Task model.",
+      "deadline": "2026-12-13T13:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 4,
+      "assignees": [4, 10, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 78,
+    "fields": {
+      "name": "Test Offline PWA Capability",
+      "description": "Verify ServiceWorker caching strategy when connection is lost.",
+      "deadline": "2026-11-21T12:00:00Z",
+      "is_completed": true,
+      "priority": "Medium",
+      "task_type": 5,
+      "assignees": [3, 19, 23]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 79,
+    "fields": {
+      "name": "Setup Keycloak SSO Integration",
+      "description": "Configure OpenID Connect provider integration for Enterprise single sign-on.",
+      "deadline": "2026-12-14T16:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [6, 8, 17]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 80,
+    "fields": {
+      "name": "Fix Encoding Issue in CSV Imports",
+      "description": "Handle UTF-8 BOM characters correctly when parsing uploaded worker spreadsheets.",
+      "deadline": "2026-11-22T09:00:00Z",
+      "is_completed": true,
+      "priority": "Medium",
+      "task_type": 1,
+      "assignees": [11, 16]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 81,
+    "fields": {
+      "name": "Implement Task Archiving Workflow",
+      "description": "Move completed tasks older than 90 days into cold storage archive tables.",
+      "deadline": "2026-12-15T15:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 3,
+      "assignees": [2, 17]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 82,
+    "fields": {
+      "name": "Audit Static Code Coverage Metrics",
+      "description": "Configure Coverage.py in CI to fail builds if code coverage drops below 85%.",
+      "deadline": "2026-12-16T11:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 4,
+      "assignees": [7, 13, 23]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 83,
+    "fields": {
+      "name": "Fix Tooltip Position Clipping",
+      "description": "Fix CSS z-index and overflow boundaries for action buttons in datatable headers.",
+      "deadline": "2026-11-23T14:00:00Z",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 1,
+      "assignees": [5, 18, 22]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 84,
+    "fields": {
+      "name": "Add System Activity Log View",
+      "description": "Create audit log page showing administrative actions, logins, and task deletions.",
+      "deadline": "2026-12-17T18:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [1, 9, 24]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 85,
+    "fields": {
+      "name": "Optimize Font Preloading",
+      "description": "Add <link rel='preload'> tags in base HTML head for custom Web Fonts.",
+      "deadline": "2026-12-18T10:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 4,
+      "assignees": [12, 18]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 86,
+    "fields": {
+      "name": "Fix Duplicate Notification Dispatches",
+      "description": "Ensure Celery task lock prevents sending duplicate emails on rapid status updates.",
+      "deadline": "2026-11-24T12:00:00Z",
+      "is_completed": true,
+      "priority": "Urgent",
+      "task_type": 1,
+      "assignees": [6, 8, 11]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 87,
+    "fields": {
+      "name": "Integrate Slack Channel Webhooks",
+      "description": "Send notifications to designated Slack channels when urgent tasks are created.",
+      "deadline": "2026-12-19T17:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 2,
+      "assignees": [4, 10, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 88,
+    "fields": {
+      "name": "Test Localization in Right-To-Left (RTL) Languages",
+      "description": "Verify Arabic and Hebrew interface orientation and layout mirroring.",
+      "deadline": "2026-12-20T14:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 5,
+      "assignees": [3, 7, 23]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 89,
+    "fields": {
+      "name": "Fix Memory Leak in WebSocket Server",
+      "description": "Close unhandled Redis pub/sub connections in Daphne channels process.",
+      "deadline": "2026-11-25T16:00:00Z",
+      "is_completed": true,
+      "priority": "Urgent",
+      "task_type": 1,
+      "assignees": [6, 15, 20, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 90,
+    "fields": {
+      "name": "Implement Custom Permission System",
+      "description": "Add role-based granular permissions for editing and deleting tasks.",
+      "deadline": "2026-12-21T18:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [2, 8, 14, 24]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 91,
+    "fields": {
+      "name": "Clean Up Unused JavaScript Packages",
+      "description": "Remove dead npm packages and update package.json dependencies.",
+      "deadline": "2026-12-22T11:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 4,
+      "assignees": [2, 5, 18]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 92,
+    "fields": {
+      "name": "Fix Incorrect Status Badge Color",
+      "description": "Update CSS helper class mapping for 'Urgent' priority tasks to display red badge.",
+      "deadline": "2026-11-26T10:00:00Z",
+      "is_completed": true,
+      "priority": "Low",
+      "task_type": 1,
+      "assignees": [5, 12, 22]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 93,
+    "fields": {
+      "name": "Configure Distributed Caching cluster",
+      "description": "Set up Redis Sentinel cluster for high-availability cache failover.",
+      "deadline": "2026-12-23T15:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 2,
+      "assignees": [6, 15, 20, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 94,
+    "fields": {
+      "name": "Perform Usability Tests with Feedback Group",
+      "description": "Conduct 5 user testing sessions on task management dashboard features.",
+      "deadline": "2026-12-24T12:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 5,
+      "assignees": [9, 12, 14, 24]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 95,
+    "fields": {
+      "name": "Fix Deadlock in Database Migrations",
+      "description": "Add explicit timeout parameters to ALTER TABLE migration scripts.",
+      "deadline": "2026-11-27T09:00:00Z",
+      "is_completed": true,
+      "priority": "Urgent",
+      "task_type": 1,
+      "assignees": [8, 10, 17]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 96,
+    "fields": {
+      "name": "Add Custom Task Tagging System",
+      "description": "Implement django-taggit to allow tagging tasks with custom labels.",
+      "deadline": "2026-12-25T16:00:00Z",
+      "is_completed": false,
+      "priority": "Medium",
+      "task_type": 2,
+      "assignees": [4, 11, 21]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 97,
+    "fields": {
+      "name": "Refactor Django Settings Structure",
+      "description": "Split settings.py into base.py, local.py, production.py, and test.py files.",
+      "deadline": "2026-12-26T13:00:00Z",
+      "is_completed": false,
+      "priority": "Low",
+      "task_type": 4,
+      "assignees": [6, 10, 17]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 98,
+    "fields": {
+      "name": "Test Payment Failure Recovery Flow",
+      "description": "Verify user subscription fallback state when credit card charge fails.",
+      "deadline": "2026-11-28T17:00:00Z",
+      "is_completed": true,
+      "priority": "High",
+      "task_type": 5,
+      "assignees": [3, 7, 13, 23]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 99,
+    "fields": {
+      "name": "Configure Fail2Ban on Production Gateway",
+      "description": "Block repeated failed SSH and HTTP login IP addresses automatically.",
+      "deadline": "2026-12-27T11:00:00Z",
+      "is_completed": false,
+      "priority": "High",
+      "task_type": 4,
+      "assignees": [15, 20, 25]
+    }
+  },
+  {
+    "model": "task.task",
+    "pk": 100,
+    "fields": {
+      "name": "Year-End Release Retrospective & Planning",
+      "description": "Review annual release metrics and draft product objectives for 2027.",
+      "deadline": "2026-12-28T18:00:00Z",
+      "is_completed": false,
+      "priority": "Urgent",
+      "task_type": 2,
+      "assignees": [1, 9, 14, 20, 24]
+    }
+  }
+]
