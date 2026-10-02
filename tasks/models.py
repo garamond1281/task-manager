@@ -4,6 +4,10 @@ from django.db import models
 from workers.models import Worker
 
 
+class Project(models.Model):
+    name = models.CharField(max_length=255)
+
+
 class TaskType(models.Model):
     name = models.CharField(max_length=255)
 
@@ -20,8 +24,10 @@ class Task(models.Model):
 
     name = models.CharField(max_length=255)
     description = models.TextField()
-    deadline = models.DateTimeField()
+    deadline = models.DateField()
     is_completed = models.BooleanField(default=False)
     priority = models.CharField(max_length=10, choices=Priority, default=Priority.MEDIUM)
     task_type = models.ForeignKey(TaskType, on_delete=models.CASCADE)
     assignees = models.ManyToManyField(Worker, related_name="assigned_tasks")
+    project = models.ForeignKey(Project, on_delete=models.CASCADE)
+
