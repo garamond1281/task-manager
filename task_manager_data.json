@@ -50,52 +50,52 @@
     "fields": { "name": "QA" }
   },
   {
-    "model": "tasks.project",
+    "model": "projects.project",
     "pk": 1,
     "fields": { "name": "E-commerce Platform" }
   },
   {
-    "model": "tasks.project",
+    "model": "projects.project",
     "pk": 2,
     "fields": { "name": "CRM System" }
   },
   {
-    "model": "tasks.project",
+    "model": "projects.project",
     "pk": 3,
     "fields": { "name": "Mobile Banking App" }
   },
   {
-    "model": "tasks.project",
+    "model": "projects.project",
     "pk": 4,
     "fields": { "name": "Corporate Website" }
   },
   {
-    "model": "tasks.project",
+    "model": "projects.project",
     "pk": 5,
     "fields": { "name": "Analytics Dashboard" }
   },
   {
-    "model": "tasks.project",
+    "model": "projects.project",
     "pk": 6,
     "fields": { "name": "Inventory Management" }
   },
   {
-    "model": "tasks.project",
+    "model": "projects.project",
     "pk": 7,
     "fields": { "name": "Chatbot Integration" }
   },
   {
-    "model": "tasks.project",
+    "model": "projects.project",
     "pk": 8,
     "fields": { "name": "Billing Service" }
   },
   {
-    "model": "tasks.project",
+    "model": "projects.project",
     "pk": 9,
     "fields": { "name": "API Gateway" }
   },
   {
-    "model": "tasks.project",
+    "model": "projects.project",
     "pk": 10,
     "fields": { "name": "CI/CD Pipeline Setup" }
   },
