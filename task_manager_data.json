@@ -410,7 +410,7 @@
       "password": "pbkdf2_sha256$600000$fakehash$pass20=",
       "is_superuser": false,
       "username": "svitlana_qa",
-      "first_name": " Светлана ",
+      "first_name": " Svitlana ",
       "last_name": "Savchenko",
       "email": "svitlana@example.com",
       "is_staff": false,
