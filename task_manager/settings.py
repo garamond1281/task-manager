@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     "tasks",
     "workers",
     "projects",
+    "crispy_forms",
+    "crispy_bootstrap4",
 ]
 
 MIDDLEWARE = [
@@ -130,4 +132,10 @@ MAILERS = {
     },
 }
 
+DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
 AUTH_USER_MODEL = "workers.Worker"
+
+CRISPY_TEMPLATE_PACK = "bootstrap4"
+
+LOGIN_REDIRECT_URL = "/"
