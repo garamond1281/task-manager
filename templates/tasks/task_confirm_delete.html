@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container my-5" style="max-width: 500px;">
+    <div class="card shadow-sm border-0 rounded-4 p-4 bg-white text-center">
+      <div class="card-body">
+        <div class="text-danger fs-1 mb-3">
+          <i class="bi bi-exclamation-triangle-fill"></i>
+        </div>
+        <h1 class="h3 fw-bold text-dark mb-3">Delete project</h1>
+        <p class="text-dark mb-4">Are you sure you want to delete task <strong>{{ task.name }}</strong>?</p>
+        
+        <form action="" method="post" class="d-flex justify-content-center gap-2">
+          {% csrf_token %}
+          <a href="javascript:history.back()" class="btn btn-outline-secondary rounded-pill px-4">Cancel</a>
+          <input class="btn btn-danger rounded-pill px-4 shadow-sm" type="submit" value="Yes, delete">
+        </form>
+      </div>
+    </div>
+  </div>
+{% endblock %}

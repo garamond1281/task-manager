@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% load crispy_forms_filters %}
+
+{% block content %}
+  <div class="container my-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+      <h1 class="h3 fw-bold text-dark mb-0">Tasks</h1>
+      {% if perms.tasks.add_task %}
+        <a class="btn btn-primary rounded-pill px-4 shadow-sm" href="{% url "tasks:task_create" %}">
+          <i class="bi bi-plus-lg me-1"></i> Create task
+        </a>
+      {% endif %}
+    </div>
+
+    <div class="card shadow-sm border-0 rounded-4 p-4 mb-4 bg-white">
+      <form method="get" action="" class="row g-3 align-items-center">
+        <div class="col-md-10">
+          {{ search_form|crispy }}
+        </div>
+        <div class="col-md-2 d-grid">
+          <input class="btn btn-outline-secondary rounded-pill" type="submit" value="Search">
+        </div>
+      </form>
+    </div>
+
+    {% if task_list %}
+      <div class="card shadow-sm border-0 rounded-4 bg-white overflow-hidden">
+        <div class="table-responsive">
+          <table class="table table-hover align-middle mb-0">
+            <thead class="table-light">
+              <tr>
+                <th class="py-3 ps-4">ID</th>
+                <th class="py-3">Name</th>
+                <th class="py-3">Deadline</th>
+                <th class="py-3">Type</th>
+                <th class="py-3">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for task in task_list %}
+                <tr>
+                  <td class="ps-4">
+                    <a href="{{ task.get_absolute_url }}" class="fw-bold text-decoration-none text-primary">#{{ task.id }}</a>
+                  </td>
+                  <td class="fw-semibold text-dark">
+                    {{ task.name }}
+                  </td>
+                  <td>
+                    {{ task.deadline }}
+                  </td>
+                  <td>
+                    <span class="badge bg-light text-dark border">{{ task.task_type }}</span>
+                  </td>
+                  <td>
+                    {% if task.is_completed == True %}
+                      Completed
+                    {% else %}
+                      In progress
+                    {% endif %}
+                  </td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    {% endif %}
+  </div>
+{% endblock %}
