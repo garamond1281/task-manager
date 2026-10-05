@@ -100,10 +100,414 @@
     "fields": { "name": "CI/CD Pipeline Setup" }
   },
   {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "project_managers",
+      "permissions": [
+        37,
+        38,
+        39,
+        40,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+      "name": "dvelopers",
+      "permissions": [
+        40,
+        24,
+        28,
+        32,
+        36
+      ]
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 3,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 3,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 3,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 3,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 2,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 2,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 2,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 2,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add task",
+      "content_type": 6,
+      "codename": "add_task"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change task",
+      "content_type": 6,
+      "codename": "change_task"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete task",
+      "content_type": 6,
+      "codename": "delete_task"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view task",
+      "content_type": 6,
+      "codename": "view_task"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add task type",
+      "content_type": 7,
+      "codename": "add_tasktype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change task type",
+      "content_type": 7,
+      "codename": "change_tasktype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete task type",
+      "content_type": 7,
+      "codename": "delete_tasktype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view task type",
+      "content_type": 7,
+      "codename": "view_tasktype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add position",
+      "content_type": 8,
+      "codename": "add_position"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change position",
+      "content_type": 8,
+      "codename": "change_position"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete position",
+      "content_type": 8,
+      "codename": "delete_position"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view position",
+      "content_type": 8,
+      "codename": "view_position"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 9,
+      "codename": "add_worker"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 9,
+      "codename": "change_worker"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 9,
+      "codename": "delete_worker"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 9,
+      "codename": "view_worker"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add project",
+      "content_type": 10,
+      "codename": "add_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change project",
+      "content_type": 10,
+      "codename": "change_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete project",
+      "content_type": 10,
+      "codename": "delete_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view project",
+      "content_type": 10,
+      "codename": "view_project"
+    }
+  },
+  {
     "model": "workers.worker",
     "pk": 1,
     "fields": {
       "password": "pbkdf2_sha256$1500000$NP3KqgvTvkabLhn9EXdMMW$VB3qFvUkWPnoAp03Nrs+uw2lqBjxWervaLgYE4ghvkM=",
+      "last_login": "2026-10-05T10:49:17Z",
       "is_superuser": true,
       "username": "admin",
       "first_name": "System",
@@ -112,7 +516,9 @@
       "is_staff": true,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 2
+      "position": 2,
+      "groups": [],
+      "user_permissions": []
     }
   },
   {
@@ -120,6 +526,7 @@
     "pk": 2,
     "fields": {
       "password": "pbkdf2_sha256$1500000$5ZkYxPPEwCSkVWCDN3yX6p$me/22QBi6l2HhwbAiUdrQxoKYT0uw/3PP+p96DCjgMM=",
+      "last_login": null,
       "is_superuser": false,
       "username": "developer",
       "first_name": "Senior",
@@ -128,7 +535,11 @@
       "is_staff": true,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 1
+      "position": 1,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -136,6 +547,7 @@
     "pk": 3,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass3=",
+      "last_login": null,
       "is_superuser": false,
       "username": "oleksandr_dev",
       "first_name": "Alexander",
@@ -144,7 +556,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 1
+      "position": 1,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -152,6 +568,7 @@
     "pk": 4,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass4=",
+      "last_login": null,
       "is_superuser": false,
       "username": "maria_pm",
       "first_name": "Mary",
@@ -160,7 +577,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 2
+      "position": 2,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -168,6 +589,7 @@
     "pk": 5,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass5=",
+      "last_login": null,
       "is_superuser": false,
       "username": "ivan_qa",
       "first_name": "John",
@@ -176,7 +598,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 3
+      "position": 3,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -184,6 +610,7 @@
     "pk": 6,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass6=",
+      "last_login": null,
       "is_superuser": false,
       "username": "sofia_des",
       "first_name": "Sophia",
@@ -192,7 +619,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 4
+      "position": 4,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -200,6 +631,7 @@
     "pk": 7,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass7=",
+      "last_login": null,
       "is_superuser": false,
       "username": "dmytro_devops",
       "first_name": "James",
@@ -208,7 +640,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 5
+      "position": 5,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -216,6 +652,7 @@
     "pk": 8,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass8=",
+      "last_login": null,
       "is_superuser": false,
       "username": "anastasia_dev",
       "first_name": "Anastasia",
@@ -224,7 +661,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 1
+      "position": 1,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -232,6 +673,7 @@
     "pk": 9,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass9=",
+      "last_login": null,
       "is_superuser": false,
       "username": "maksym_pm",
       "first_name": "Max",
@@ -240,7 +682,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 2
+      "position": 2,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -248,6 +694,7 @@
     "pk": 10,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass10=",
+      "last_login": null,
       "is_superuser": false,
       "username": "yuliia_qa",
       "first_name": "Julia",
@@ -256,7 +703,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 3
+      "position": 3,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -264,6 +715,7 @@
     "pk": 11,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass11=",
+      "last_login": null,
       "is_superuser": false,
       "username": "andrii_des",
       "first_name": "Andrew",
@@ -272,7 +724,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 4
+      "position": 4,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -280,6 +736,7 @@
     "pk": 12,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass12=",
+      "last_login": null,
       "is_superuser": false,
       "username": "oleh_devops",
       "first_name": "Oleg",
@@ -288,7 +745,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 5
+      "position": 5,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -296,6 +757,7 @@
     "pk": 13,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass13=",
+      "last_login": null,
       "is_superuser": false,
       "username": "kateryna_dev",
       "first_name": "Catherine",
@@ -304,7 +766,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 1
+      "position": 1,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -312,6 +778,7 @@
     "pk": 14,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass14=",
+      "last_login": null,
       "is_superuser": false,
       "username": "volodymyr_pm",
       "first_name": "Vladimir",
@@ -320,7 +787,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 2
+      "position": 2,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -328,6 +799,7 @@
     "pk": 15,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass15=",
+      "last_login": null,
       "is_superuser": false,
       "username": "tetiana_qa",
       "first_name": "Tatyana",
@@ -336,7 +808,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 3
+      "position": 3,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -344,6 +820,7 @@
     "pk": 16,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass16=",
+      "last_login": null,
       "is_superuser": false,
       "username": "artem_des",
       "first_name": "Artem",
@@ -352,7 +829,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 4
+      "position": 4,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -360,6 +841,7 @@
     "pk": 17,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass17=",
+      "last_login": null,
       "is_superuser": false,
       "username": "vitalii_devops",
       "first_name": "Vitaliy",
@@ -368,7 +850,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 5
+      "position": 5,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -376,6 +862,7 @@
     "pk": 18,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass18=",
+      "last_login": null,
       "is_superuser": false,
       "username": "natalia_dev",
       "first_name": "Natalie",
@@ -384,7 +871,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 1
+      "position": 1,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -392,6 +883,7 @@
     "pk": 19,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass19=",
+      "last_login": null,
       "is_superuser": false,
       "username": "pavlo_pm",
       "first_name": "Paul",
@@ -400,7 +892,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 2
+      "position": 2,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -408,15 +904,20 @@
     "pk": 20,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass20=",
+      "last_login": null,
       "is_superuser": false,
       "username": "svitlana_qa",
-      "first_name": " Svitlana ",
+      "first_name": "Svitlana",
       "last_name": "Savchenko",
       "email": "svitlana@example.com",
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 3
+      "position": 3,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -424,6 +925,7 @@
     "pk": 21,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass21=",
+      "last_login": null,
       "is_superuser": false,
       "username": "denys_des",
       "first_name": "Denis",
@@ -432,7 +934,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 4
+      "position": 4,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -440,6 +946,7 @@
     "pk": 22,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass22=",
+      "last_login": null,
       "is_superuser": false,
       "username": "ihor_devops",
       "first_name": "Igor",
@@ -448,7 +955,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 5
+      "position": 5,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -456,6 +967,7 @@
     "pk": 23,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass23=",
+      "last_login": null,
       "is_superuser": false,
       "username": "olena_dev",
       "first_name": "Helen",
@@ -464,7 +976,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 1
+      "position": 1,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -472,6 +988,7 @@
     "pk": 24,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass24=",
+      "last_login": null,
       "is_superuser": false,
       "username": "roman_pm",
       "first_name": "Roman",
@@ -480,7 +997,11 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 2
+      "position": 2,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
     }
   },
   {
@@ -488,6 +1009,7 @@
     "pk": 25,
     "fields": {
       "password": "pbkdf2_sha256$600000$fakehash$pass25=",
+      "last_login": null,
       "is_superuser": false,
       "username": "victoria_qa",
       "first_name": "Victoria",
@@ -496,7 +1018,32 @@
       "is_staff": false,
       "is_active": true,
       "date_joined": "2026-01-01T00:00:00Z",
-      "position": 3
+      "position": 3,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 26,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$NP3KqgvTvkabLhn9EXdMMW$VB3qFvUkWPnoAp03Nrs+uw2lqBjxWervaLgYE4ghvkM=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "pm127",
+      "first_name": "Project",
+      "last_name": "Manager",
+      "email": "pm127@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 2,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
     }
   },
   {
