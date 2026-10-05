@@ -1,11 +1,9 @@
 from django.contrib.auth.models import User
 from django.db import models
+from django.urls import reverse
 
+from projects.models import Project
 from workers.models import Worker
-
-
-class Project(models.Model):
-    name = models.CharField(max_length=255)
 
 
 class TaskType(models.Model):
@@ -30,4 +28,7 @@ class Task(models.Model):
     task_type = models.ForeignKey(TaskType, on_delete=models.CASCADE)
     assignees = models.ManyToManyField(Worker, related_name="assigned_tasks")
     project = models.ForeignKey(Project, on_delete=models.CASCADE)
+
+    def get_absolute_url(self):
+        return reverse('tasks:task_detail', args=[str(self.id)])
 
