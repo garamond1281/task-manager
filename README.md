@@ -4,7 +4,7 @@ Django project for managing tasks, projects and workers
 
 ## Check it out:
 
-[Task manager deployed to Render]()
+[Task manager deployed to Render](https://task-manager-mwkg.onrender.com/)
 
 ## Installing 
 
