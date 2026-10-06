@@ -57,7 +57,7 @@ class WorkerDetailView(LoginRequiredMixin, generic.DetailView):
 class WorkerCreateView(LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView):
     model = Worker
     form_class = WorkerCreationForm
-    success_url = "workers:worker_list"
+    success_url = reverse_lazy("workers:worker-list")
     permission_required = "workers.add_worker"
 
 
@@ -65,11 +65,13 @@ class WorkerUpdateView(LoginRequiredMixin, PermissionRequiredMixin, generic.Upda
     model = Worker
     form_class = WorkerCreationForm
     permission_required = "workers.change_worker"
+    success_url = reverse_lazy("workers:worker-list")
 
 
 class WorkerDeleteView(LoginRequiredMixin, PermissionRequiredMixin, generic.DeleteView):
     model = Worker
     permission_required = "workers.delete_worker"
+    success_url = reverse_lazy("workers:worker-list")
 
 
 class UserRegisterView(FormView):

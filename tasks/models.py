@@ -31,4 +31,3 @@ class Task(models.Model):
 
     def get_absolute_url(self):
         return reverse('tasks:task_detail', args=[str(self.id)])
-
