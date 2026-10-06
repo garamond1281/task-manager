@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="container my-4">
+    <div class="card shadow-sm border-0 rounded-4 p-4 mb-4 bg-light">
+      <div class="d-flex justify-content-between align-items-center flex-wrap gap-3">
+        <h1 class="h2 fw-bold text-dark mb-0">{{ task.name }}</h1>
+        <div class="d-flex gap-2">
+          {% if perms.tasks.change_task %}
+            <a class="btn btn-outline-secondary rounded-pill px-3" href="{% url "tasks:task_update" pk=task.id %}">
+              <i class="bi bi-pencil me-1"></i> Edit
+            </a>
+          {% endif %}
+          {% if perms.tasks.delete_task %}
+            <a class="btn btn-outline-danger rounded-pill px-3" href="{% url 'tasks:task_delete' pk=task.id %}">
+              <i class="bi bi-trash me-1"></i> Delete
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-3 mb-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 rounded-4 p-3 bg-white">
+          <span class="text-muted text-uppercase small fw-semibold">Deadline</span>
+          <p class="fw-bold text-dark mb-0">{{ task.deadline }}</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 rounded-4 p-3 bg-white">
+          <span class="text-muted text-uppercase small fw-semibold">Type</span>
+          <p class="fw-bold text-dark mb-0">{{ task.task_type }}</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm border-0 rounded-4 p-3 bg-white">
+          <span class="text-muted text-uppercase small fw-semibold">Status</span>
+          <p class="fw-bold mb-0">
+            {% if task.is_completed %}
+              <span class="text-success">Completed</span>
+            {% else %}
+              <span class="text-warning">In progress</span>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card shadow-sm border-0 rounded-4 p-4 mb-4 bg-white">
+      <h3 class="h5 fw-bold text-dark mb-3">Description</h3>
+      <p class="text-muted mb-0">{{ task.description }}</p>
+    </div>
+
+    <div class="card shadow-sm border-0 rounded-4 p-4 bg-white">
+      <h3 class="h5 fw-bold text-dark mb-3"><i class="bi bi-people-fill me-2"></i> Assignees</h3>
+      <div class="list-group list-group-flush">
+        {% for worker in task.assignees.all %}
+          <div class="list-group-item px-0 py-3 d-flex justify-content-between align-items-center">
+            <div>
+              <a href="{{ worker.get_absolute_url }}" class="fw-bold text-decoration-none text-primary">#{{ worker.id }} - {{ worker.first_name }} {{ worker.last_name }}</a>
+              {% if worker.position %}
+                <span class="badge bg-light text-dark border ms-2">{{ worker.position }}</span>
+              {% endif %}
+            </div>
+          </div>
+        {% empty %}
+          <p class="text-muted mb-0">No assignees</p>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+{% endblock %}
