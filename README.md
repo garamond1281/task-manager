@@ -1,9 +1,34 @@
 # task-manager
 
-1. pip install -r requirements.txt
-2. python manage.py makemigrations
-3. python manage.py migrate
-4. python manage.py loaddata task_manager_data.json
+Django project for managing tasks, projects and workers
+
+## Check it out:
+
+[Task manager deployed to Render]()
+
+## Installing 
+
+Python3 must be already installed
+
+```shell
+git clone https://github.com/garamond1281/task-manager
+cd task-manager
+python -m venv .venv
+source .venv/Scripts/activate
+pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+python manage.py loaddata task_manager_data.json
+python manage.py runserver
+
+```
+
+## Features
+
+* Authentication functionality for Worker/User
+* Managing projects, tasks & workers directly from website interface
+
+##
 
 Project Manager(Has permissions to create/update/delete tasks/projects/workers):
 
