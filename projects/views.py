@@ -35,10 +35,14 @@ class ProjectDetailView(LoginRequiredMixin, generic.DetailView):
         context = super().get_context_data(**kwargs)
         project = self.get_object()
 
-        context["num_completed"] = Task.objects.filter(project=project, is_completed=True).count()
-        context["num_in_progress"] = Task.objects.filter(project=project, is_completed=False).count()
-        context["completed_list"] = Task.objects.filter(project=project, is_completed=True)
-        context["in_progress_list"] = Task.objects.filter(project=project, is_completed=False)
+        completed_qs = Task.objects.filter(project=project, is_completed=True)
+        in_progress_qs = Task.objects.filter(project=project, is_completed=False)
+
+        context["num_completed"] = completed_qs.count()
+        context["num_in_progress"] = in_progress_qs.count()
+
+        context["completed_list"] = completed_qs.select_related("task_type")
+        context["in_progress_list"] = in_progress_qs.select_related("task_type")
 
         return context
 

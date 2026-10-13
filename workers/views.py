@@ -28,7 +28,7 @@ class WorkerListView(LoginRequiredMixin, generic.ListView):
         return context
 
     def get_queryset(self):
-        queryset = get_user_model().objects.all()
+        queryset = get_user_model().objects.select_related("position")
         form = WorkerSearchForm(self.request.GET)
         if form.is_valid():
             if form.cleaned_data["first_name"]:
@@ -46,10 +46,14 @@ class WorkerDetailView(LoginRequiredMixin, generic.DetailView):
         context = super().get_context_data(**kwargs)
         worker = self.get_object()
 
-        context["num_completed"] = Task.objects.filter(assignees=worker, is_completed=True).count()
-        context["num_in_progress"] = Task.objects.filter(assignees=worker, is_completed=False).count()
-        context["completed_list"] = Task.objects.filter(assignees=worker, is_completed=True)
-        context["in_progress_list"] = Task.objects.filter(assignees=worker, is_completed=False)
+        completed_qs = Task.objects.filter(assignees=worker, is_completed=True)
+        in_progress_qs = Task.objects.filter(assignees=worker, is_completed=False)
+
+        context["num_completed"] = completed_qs.count()
+        context["num_in_progress"] = in_progress_qs.count()
+
+        context["completed_list"] = completed_qs.select_related("task_type", "project")
+        context["in_progress_list"] = in_progress_qs.select_related("task_type", "project")
 
         return context
 

@@ -1,5 +1,6 @@
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.db.models import Prefetch
 from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy
@@ -46,7 +47,7 @@ class TaskListView(LoginRequiredMixin, generic.ListView):
         return context
 
     def get_queryset(self):
-        queryset = Task.objects.all().select_related("project")
+        queryset = Task.objects.all().select_related("task_type")
         form = TaskSearchForm(self.request.GET)
         if form.is_valid():
             if form.cleaned_data.get("name"):
@@ -59,6 +60,16 @@ class TaskListView(LoginRequiredMixin, generic.ListView):
 
 class TaskDetailView(LoginRequiredMixin, generic.DetailView):
     model = Task
+
+    def get_queryset(self):
+        queryset = Task.objects.select_related("task_type", "project").prefetch_related(
+            Prefetch(
+                "assignees",
+                queryset=Worker.objects.select_related("position")
+            )
+        )
+
+        return queryset
 
 
 class TaskCreateView(LoginRequiredMixin, PermissionRequiredMixin, generic.CreateView):
