@@ -4,27 +4,29 @@ from django.http import HttpRequest, HttpResponse
 from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views import generic
-
+from django.views.generic import TemplateView
 
 from tasks.forms import TaskSearchForm, TaskForm
 from tasks.models import Project, Task
 from workers.models import Worker
 
 
-@login_required
-def index(request: HttpRequest) -> HttpResponse:
-    num_workers = Worker.objects.count()
-    num_projects = Project.objects.count()
-    num_tasks = Task.objects.count()
-    num_visits = request.session.get("num_visits", 0)
-    request.session["num_visits"] = num_visits + 1
-    context = {
-        "num_workers": num_workers,
-        "num_projects": num_projects,
-        "num_tasks": num_tasks,
-        "num_visits": num_visits + 1,
-    }
-    return render(request, "tasks/index.html", context)
+class IndexView(LoginRequiredMixin, TemplateView):
+    template_name = "tasks/index.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        num_visits = self.request.session.get("num_visits", 0)
+        self.request.session["num_visits"] = num_visits + 1
+
+        context.update({
+            "num_workers": Worker.objects.count(),
+            "num_projects": Project.objects.count(),
+            "num_tasks": Task.objects.count(),
+            "num_visits": num_visits + 1,
+        })
+        return context
 
 
 class TaskListView(LoginRequiredMixin, generic.ListView):
