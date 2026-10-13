@@ -38,9 +38,9 @@
             </thead>
             <tbody>
               {% for task in task_list %}
-                <tr>
+                <tr onclick="window.location='{{ task.get_absolute_url }}'" style="cursor: pointer;">
                   <td class="ps-4">
-                    <a href="{{ task.get_absolute_url }}" class="fw-bold text-decoration-none text-primary">#{{ task.id }}</a>
+                    <span class="fw-bold text-primary">#{{ task.id }}</span>
                   </td>
                   <td class="fw-semibold text-dark">
                     {{ task.name }}

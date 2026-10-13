@@ -35,9 +35,9 @@
             </thead>
             <tbody>
               {% for project in project_list %}
-                <tr>
+                <tr onclick="window.location='{{ project.get_absolute_url }}'" style="cursor: pointer;">
                   <td class="ps-4">
-                    <a href="{{ project.get_absolute_url }}" class="fw-bold text-decoration-none text-primary">#{{ project.id }}</a>
+                    <span class="fw-bold text-primary">#{{ project.id }}</span>
                   </td>
                   <td class="fw-semibold text-dark">
                     {{ project.name }}
