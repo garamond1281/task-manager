@@ -1,5 +1,5 @@
 from django.contrib.auth import get_user, get_user_model
-from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin
+from django.contrib.auth.mixins import LoginRequiredMixin, PermissionRequiredMixin, UserPassesTestMixin
 
 from django.urls import reverse_lazy
 from django.views import generic
@@ -61,11 +61,14 @@ class WorkerCreateView(LoginRequiredMixin, PermissionRequiredMixin, generic.Crea
     permission_required = "workers.add_worker"
 
 
-class WorkerUpdateView(LoginRequiredMixin, PermissionRequiredMixin, generic.UpdateView):
+class WorkerUpdateView(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
     model = Worker
     form_class = WorkerCreationForm
-    permission_required = "workers.change_worker"
     success_url = reverse_lazy("workers:worker-list")
+
+    def test_func(self):
+        worker = self.get_object()
+        return self.request.user == worker or self.request.user.has_perm("workers.change_worker")
 
 
 class WorkerDeleteView(LoginRequiredMixin, PermissionRequiredMixin, generic.DeleteView):
