@@ -22,11 +22,29 @@ python manage.py loaddata task_manager_data.json
 python manage.py runserver
 
 ```
+## Descripton
+
+Task Management System (Django)
+
+A robust and feature-rich Task Management Web Application built with Python and Django.
+Designed for teams and project managers to efficiently track projects, manage worker profiles,
+assign tasks, and monitor task progress with optimized database performance.
 
 ## Features
 
-* Authentication functionality for Worker/User
-* Managing projects, tasks & workers directly from website interface
+* User Authentication & Role-Based Access Control: Secure login/logout flows, custom user profiles, and strict permissions (e.g., standard users can only edit their own profiles, while Project Managers have elevated privileges using UserPassesTestMixin).
+
+* Project & Task Tracking: Create and manage projects, organize tasks by types, and categorize them into active (in-progress) and completed statuses.
+
+* Worker Directory: Comprehensive worker profiles displaying assigned tasks, contact info, and positions.
+
+* Advanced Query Optimization: Performance-tuned using select_related, prefetch_related (with custom Prefetch objects), and split aggregation queries to completely eliminate N+1 query bottlenecks.
+
+* Modern UI/UX: Styled with Bootstrap 5 and Bootstrap Icons, featuring responsive layouts, custom sidebars, and interactive table components.
+
+## Database Schema
+
+![Database Diagram](/db_diagram.png)
 
 ##
 
