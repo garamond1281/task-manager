@@ -37,9 +37,9 @@
             </thead>
             <tbody>
               {% for worker in worker_list %}
-                <tr>
+                <tr onclick="window.location='{{ worker.get_absolute_url }}'" style="cursor: pointer;">
                   <td class="ps-4">
-                    <a href="{{ worker.get_absolute_url }}" class="fw-bold text-decoration-none text-primary">#{{ worker.id }}</a>
+                    <span class="fw-bold text-primary">#{{ worker.id }}</span>
                   </td>
                   <td class="fw-semibold text-dark">
                     {{ worker.first_name }} {{ worker.last_name }}
