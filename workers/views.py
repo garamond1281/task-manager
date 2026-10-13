@@ -6,7 +6,7 @@ from django.views import generic
 from django.views.generic import FormView
 
 from tasks.models import Task
-from workers.forms import WorkerSearchForm, WorkerCreationForm, UserRegisterForm
+from workers.forms import WorkerSearchForm, WorkerCreationForm, UserRegisterForm, WorkerUpdateForm
 from workers.models import Worker
 from workers.services.user_service import UserService
 
@@ -67,7 +67,7 @@ class WorkerCreateView(LoginRequiredMixin, PermissionRequiredMixin, generic.Crea
 
 class WorkerUpdateView(LoginRequiredMixin, UserPassesTestMixin, generic.UpdateView):
     model = Worker
-    form_class = WorkerCreationForm
+    form_class = WorkerUpdateForm
     success_url = reverse_lazy("workers:worker-list")
 
     def test_func(self):

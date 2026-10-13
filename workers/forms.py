@@ -19,6 +19,13 @@ class WorkerSearchForm(forms.Form):
         label=""
     )
 
+
+class WorkerUpdateForm(forms.ModelForm):
+    class Meta:
+        model = get_user_model()
+        fields = ("username", "first_name", "last_name", "email", "position")
+
+
 class WorkerCreationForm(UserCreationForm):
     class Meta:
         user = get_user_model()
