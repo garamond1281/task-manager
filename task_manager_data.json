@@ -1,0 +1,1549 @@
+[
+  {
+    "model": "workers.position",
+    "pk": 1,
+    "fields": { "name": "Developer" }
+  },
+  {
+    "model": "workers.position",
+    "pk": 2,
+    "fields": { "name": "Project Manager" }
+  },
+  {
+    "model": "workers.position",
+    "pk": 3,
+    "fields": { "name": "QA Engineer" }
+  },
+  {
+    "model": "workers.position",
+    "pk": 4,
+    "fields": { "name": "Designer" }
+  },
+  {
+    "model": "workers.position",
+    "pk": 5,
+    "fields": { "name": "DevOps" }
+  },
+  {
+    "model": "tasks.tasktype",
+    "pk": 1,
+    "fields": { "name": "Bug" }
+  },
+  {
+    "model": "tasks.tasktype",
+    "pk": 2,
+    "fields": { "name": "New feature" }
+  },
+  {
+    "model": "tasks.tasktype",
+    "pk": 3,
+    "fields": { "name": "Breaking change" }
+  },
+  {
+    "model": "tasks.tasktype",
+    "pk": 4,
+    "fields": { "name": "Refactoring" }
+  },
+  {
+    "model": "tasks.tasktype",
+    "pk": 5,
+    "fields": { "name": "QA" }
+  },
+  {
+    "model": "projects.project",
+    "pk": 1,
+    "fields": { "name": "E-commerce Platform" }
+  },
+  {
+    "model": "projects.project",
+    "pk": 2,
+    "fields": { "name": "CRM System" }
+  },
+  {
+    "model": "projects.project",
+    "pk": 3,
+    "fields": { "name": "Mobile Banking App" }
+  },
+  {
+    "model": "projects.project",
+    "pk": 4,
+    "fields": { "name": "Corporate Website" }
+  },
+  {
+    "model": "projects.project",
+    "pk": 5,
+    "fields": { "name": "Analytics Dashboard" }
+  },
+  {
+    "model": "projects.project",
+    "pk": 6,
+    "fields": { "name": "Inventory Management" }
+  },
+  {
+    "model": "projects.project",
+    "pk": 7,
+    "fields": { "name": "Chatbot Integration" }
+  },
+  {
+    "model": "projects.project",
+    "pk": 8,
+    "fields": { "name": "Billing Service" }
+  },
+  {
+    "model": "projects.project",
+    "pk": 9,
+    "fields": { "name": "API Gateway" }
+  },
+  {
+    "model": "projects.project",
+    "pk": 10,
+    "fields": { "name": "CI/CD Pipeline Setup" }
+  },
+  {
+    "model": "auth.group",
+    "pk": 1,
+    "fields": {
+      "name": "project_managers",
+      "permissions": [
+        37,
+        38,
+        39,
+        40,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36
+      ]
+    }
+  },
+  {
+    "model": "auth.group",
+    "pk": 2,
+    "fields": {
+      "name": "dvelopers",
+      "permissions": [
+        40,
+        24,
+        28,
+        32,
+        36
+      ]
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 3,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 3,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 3,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 3,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 2,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 2,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 2,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 2,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 4,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 4,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 4,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 4,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 5,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 5,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 5,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 5,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add task",
+      "content_type": 6,
+      "codename": "add_task"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change task",
+      "content_type": 6,
+      "codename": "change_task"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete task",
+      "content_type": 6,
+      "codename": "delete_task"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view task",
+      "content_type": 6,
+      "codename": "view_task"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add task type",
+      "content_type": 7,
+      "codename": "add_tasktype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change task type",
+      "content_type": 7,
+      "codename": "change_tasktype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete task type",
+      "content_type": 7,
+      "codename": "delete_tasktype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view task type",
+      "content_type": 7,
+      "codename": "view_tasktype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add position",
+      "content_type": 8,
+      "codename": "add_position"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change position",
+      "content_type": 8,
+      "codename": "change_position"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete position",
+      "content_type": 8,
+      "codename": "delete_position"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view position",
+      "content_type": 8,
+      "codename": "view_position"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 9,
+      "codename": "add_worker"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 9,
+      "codename": "change_worker"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 9,
+      "codename": "delete_worker"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 9,
+      "codename": "view_worker"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add project",
+      "content_type": 10,
+      "codename": "add_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change project",
+      "content_type": 10,
+      "codename": "change_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete project",
+      "content_type": 10,
+      "codename": "delete_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can view project",
+      "content_type": 10,
+      "codename": "view_project"
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$NP3KqgvTvkabLhn9EXdMMW$VB3qFvUkWPnoAp03Nrs+uw2lqBjxWervaLgYE4ghvkM=",
+      "last_login": "2026-10-05T10:49:17Z",
+      "is_superuser": true,
+      "username": "admin",
+      "first_name": "System",
+      "last_name": "Administrator",
+      "email": "admin@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 2,
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$5ZkYxPPEwCSkVWCDN3yX6p$me/22QBi6l2HhwbAiUdrQxoKYT0uw/3PP+p96DCjgMM=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "developer",
+      "first_name": "Senior",
+      "last_name": "Developer",
+      "email": "developer@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 1,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass3=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "oleksandr_dev",
+      "first_name": "Alexander",
+      "last_name": "Shevchenko",
+      "email": "oleksandr@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 1,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass4=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "maria_pm",
+      "first_name": "Mary",
+      "last_name": "Kovalenko",
+      "email": "maria@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 2,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass5=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ivan_qa",
+      "first_name": "John",
+      "last_name": "Melnyk",
+      "email": "ivan@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 3,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 6,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass6=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "sofia_des",
+      "first_name": "Sophia",
+      "last_name": "Boyko",
+      "email": "sofia@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 4,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 7,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass7=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "dmytro_devops",
+      "first_name": "James",
+      "last_name": "Kravchenko",
+      "email": "dmytro@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 5,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 8,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "anastasia_dev",
+      "first_name": "Anastasia",
+      "last_name": "Tkachenko",
+      "email": "anastasia@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 1,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 9,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass9=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "maksym_pm",
+      "first_name": "Max",
+      "last_name": "Kovalchuk",
+      "email": "maksym@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 2,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 10,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass10=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "yuliia_qa",
+      "first_name": "Julia",
+      "last_name": "Koval",
+      "email": "yuliia@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 3,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 11,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass11=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "andrii_des",
+      "first_name": "Andrew",
+      "last_name": "Oliinyk",
+      "email": "andrii@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 4,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 12,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass12=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "oleh_devops",
+      "first_name": "Oleg",
+      "last_name": "Shevchuk",
+      "email": "oleh@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 5,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 13,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass13=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "kateryna_dev",
+      "first_name": "Catherine",
+      "last_name": "Polishchuk",
+      "email": "kateryna@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 1,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 14,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass14=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "volodymyr_pm",
+      "first_name": "Vladimir",
+      "last_name": "Bondarenko",
+      "email": "volodymyr@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 2,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 15,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass15=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "tetiana_qa",
+      "first_name": "Tatyana",
+      "last_name": "Marchenko",
+      "email": "tetiana@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 3,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 16,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass16=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "artem_des",
+      "first_name": "Artem",
+      "last_name": "Rudenko",
+      "email": "artem@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 4,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 17,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass17=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "vitalii_devops",
+      "first_name": "Vitaliy",
+      "last_name": "Moroz",
+      "email": "vitalii@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 5,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 18,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass18=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "natalia_dev",
+      "first_name": "Natalie",
+      "last_name": "Lysenko",
+      "email": "natalia@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 1,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 19,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass19=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "pavlo_pm",
+      "first_name": "Paul",
+      "last_name": "Romanenko",
+      "email": "pavlo@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 2,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 20,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass20=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "svitlana_qa",
+      "first_name": "Svitlana",
+      "last_name": "Savchenko",
+      "email": "svitlana@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 3,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 21,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass21=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "denys_des",
+      "first_name": "Denis",
+      "last_name": "Petrenko",
+      "email": "denys@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 4,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 22,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass22=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "ihor_devops",
+      "first_name": "Igor",
+      "last_name": "Kuzmenko",
+      "email": "ihor@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 5,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 23,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass23=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "olena_dev",
+      "first_name": "Helen",
+      "last_name": "Vasylenko",
+      "email": "olena@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 1,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 24,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass24=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "roman_pm",
+      "first_name": "Roman",
+      "last_name": "Honcharuk",
+      "email": "roman@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 2,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 25,
+    "fields": {
+      "password": "pbkdf2_sha256$600000$fakehash$pass25=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "victoria_qa",
+      "first_name": "Victoria",
+      "last_name": "Melnyk",
+      "email": "victoria@example.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 3,
+      "groups": [
+        2
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "workers.worker",
+    "pk": 26,
+    "fields": {
+      "password": "pbkdf2_sha256$1500000$NP3KqgvTvkabLhn9EXdMMW$VB3qFvUkWPnoAp03Nrs+uw2lqBjxWervaLgYE4ghvkM=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "pm127",
+      "first_name": "Project",
+      "last_name": "Manager",
+      "email": "pm127@example.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2026-01-01T00:00:00Z",
+      "position": 2,
+      "groups": [
+        1
+      ],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 1,
+    "fields": { "name": "Fix user authentication error on mobile login", "description": "Users are experiencing 500 internal server error when trying to authenticate via OAuth token.", "deadline": "2026-10-05", "is_completed": false, "priority": "Urgent", "task_type": 1, "assignees": [1, 5], "project": 3 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 2,
+    "fields": { "name": "Implement JWT refresh token mechanism", "description": "Add secure HTTP-only cookie support for refreshing access tokens without forcing user re-login.", "deadline": "2026-10-07", "is_completed": false, "priority": "High", "task_type": 2, "assignees": [2, 6], "project": 9 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 3,
+    "fields": { "name": "Refactor database queries in dashboard view", "description": "Optimize N+1 query problems using select_related and prefetch_related in analytics views.", "deadline": "2026-10-10", "is_completed": true, "priority": "Medium", "task_type": 4, "assignees": [3, 7], "project": 5 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 4,
+    "fields": { "name": "Setup PostgreSQL backup cron job on AWS RDS", "description": "Configure automated daily backups with retention policy set to 30 days.", "deadline": "2026-10-12", "is_completed": false, "priority": "High", "task_type": 5, "assignees": [4, 8], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 5,
+    "fields": { "name": "Redesign checkout page UI for mobile devices", "description": "Improve responsiveness and reduce friction in the multi-step checkout funnel.", "deadline": "2026-10-15", "is_completed": false, "priority": "Medium", "task_type": 2, "assignees": [5, 9], "project": 1 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 6,
+    "fields": { "name": "Resolve CORS policy issues for frontend domain", "description": "Update Django CORS headers middleware configuration to allow requests from the production React app.", "deadline": "2026-10-18", "is_completed": true, "priority": "Urgent", "task_type": 1, "assignees": [6, 10], "project": 4 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 7,
+    "fields": { "name": "Migrate payment gateway SDK to v3 API", "description": "Stripe API deprecation warning requires upgrading integration libraries and testing webhook endpoints.", "deadline": "2026-10-20", "is_completed": false, "priority": "Urgent", "task_type": 3, "assignees": [7, 11], "project": 8 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 8,
+    "fields": { "name": "Write unit tests for user profile serializer", "description": "Ensure boundary conditions and invalid field types are covered with Pytest fixtures.", "deadline": "2026-10-22", "is_completed": false, "priority": "Low", "task_type": 5, "assignees": [8, 12], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 9,
+    "fields": { "name": "Implement Redis caching for product catalog", "description": "Cache database query results for top categories with a 15-minute TTL to reduce database load.", "deadline": "2026-10-25", "is_completed": true, "priority": "High", "task_type": 2, "assignees": [9, 13], "project": 1 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 10,
+    "fields": { "name": "Fix memory leak in background Celery worker", "description": "Long-running PDF generation task accumulates memory; implement task chunking and garbage collection.", "deadline": "2026-10-28", "is_completed": false, "priority": "High", "task_type": 1, "assignees": [10, 14], "project": 6 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 11,
+    "fields": { "name": "Add localization support for Ukrainian language", "description": "Extract hardcoded strings into gettext PO files and configure Django i18n settings.", "deadline": "2026-10-30", "is_completed": false, "priority": "Medium", "task_type": 2, "assignees": [11, 15], "project": 4 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 12,
+    "fields": { "name": "Upgrade Django framework from 4.2 to 5.0", "description": "Review deprecated features, check third-party package compatibility, and run full test suite.", "deadline": "2026-11-02", "is_completed": true, "priority": "Urgent", "task_type": 3, "assignees": [12, 16], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 13,
+    "fields": { "name": "Configure Docker multi-stage build for production", "description": "Optimize Docker image size by separating build dependencies from runtime environment.", "deadline": "2026-11-05", "is_completed": false, "priority": "Medium", "task_type": 4, "assignees": [13, 17], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 14,
+    "fields": { "name": "Implement rate limiting on public API endpoints", "description": "Protect public search and export endpoints against DDoS and scraping using Django-ratelimit.", "deadline": "2026-11-08", "is_completed": false, "priority": "High", "task_type": 2, "assignees": [14, 18], "project": 9 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 15,
+    "fields": { "name": "Fix bug with incorrect tax calculation on discounts", "description": "Percentage-based coupons sometimes cause rounding discrepancies in final invoice totals.", "deadline": "2026-11-10", "is_completed": true, "priority": "Urgent", "task_type": 1, "assignees": [15, 19], "project": 8 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 16,
+    "fields": { "name": "Setup automated CI pipeline with GitHub Actions", "description": "Run linters (Flake8, Black) and test suites automatically on every pull request.", "deadline": "2026-11-12", "is_completed": false, "priority": "High", "task_type": 5, "assignees": [16, 20], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 17,
+    "fields": { "name": "Design notification badge component for web app", "description": "Create reusable UI component for unread messages with live WebSocket updates.", "deadline": "2026-11-15", "is_completed": false, "priority": "Low", "task_type": 2, "assignees": [17, 21], "project": 7 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 18,
+    "fields": { "name": "Refactor legacy authentication middleware", "description": "Clean up deprecated session handling logic and replace with standard DRF token authentication.", "deadline": "2026-11-18", "is_completed": true, "priority": "Medium", "task_type": 4, "assignees": [18, 22], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 19,
+    "fields": { "name": "Write end-to-end tests using Playwright", "description": "Automate user registration, item purchase, and checkout flow validation.", "deadline": "2026-11-20", "is_completed": false, "priority": "Medium", "task_type": 5, "assignees": [19, 23], "project": 1 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 20,
+    "fields": { "name": "Optimize heavy SQL aggregation queries", "description": "Add proper composite database indexes to improve report generation speed by at least 50%.", "deadline": "2026-11-22", "is_completed": false, "priority": "High", "task_type": 4, "assignees": [20, 24], "project": 5 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 21,
+    "fields": { "name": "Fix broken image upload handling in admin panel", "description": "Large uploaded PNG files throw PIL image verification errors; add proper exception handling and resizing.", "deadline": "2026-11-25", "is_completed": true, "priority": "Urgent", "task_type": 1, "assignees": [21, 25], "project": 4 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 22,
+    "fields": { "name": "Implement webhook listener for third-party shipping service", "description": "Parse delivery status update events and update corresponding order tracking fields in the database.", "deadline": "2026-11-28", "is_completed": false, "priority": "High", "task_type": 2, "assignees": [22, 1], "project": 6 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 23,
+    "fields": { "name": "Clean up unused dependencies in requirements.txt", "description": "Audit project dependencies, remove obsolete libraries, and pin exact package versions.", "deadline": "2026-11-30", "is_completed": false, "priority": "Low", "task_type": 4, "assignees": [23, 2], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 24,
+    "fields": { "name": "Configure Sentry error tracking integration", "description": "Capture unhandled application exceptions and attach user context safely without leaking passwords.", "deadline": "2026-12-02", "is_completed": true, "priority": "High", "task_type": 5, "assignees": [24, 3], "project": 9 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 25,
+    "fields": { "name": "Create dark mode color palette configuration", "description": "Define Tailwind CSS theme variables for dark mode support across all dashboard screens.", "deadline": "2026-12-05", "is_completed": false, "priority": "Low", "task_type": 2, "assignees": [25, 4], "project": 5 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 26,
+    "fields": { "name": "Fix race condition in inventory stock updates", "description": "Concurrent checkouts result in negative stock counts; wrap order placement inside atomic database transactions.", "deadline": "2026-12-08", "is_completed": false, "priority": "Urgent", "task_type": 1, "assignees": [1, 5], "project": 6 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 27,
+    "fields": { "name": "Implement social login via Google OAuth2", "description": "Allow users to sign up and log in quickly using their Google accounts via python-social-auth.", "deadline": "2026-12-10", "is_completed": true, "priority": "Medium", "task_type": 2, "assignees": [2, 6], "project": 3 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 28,
+    "fields": { "name": "Refactor URL routing structure to support API versioning", "description": "Organize API endpoints under /api/v1/ prefix and update corresponding reverse URL lookups.", "deadline": "2026-12-12", "is_completed": false, "priority": "High", "task_type": 3, "assignees": [3, 7], "project": 9 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 29,
+    "fields": { "name": "Setup Nginx reverse proxy and SSL certificate renewal", "description": "Configure Let's Encrypt auto-renewal via Certbot and secure headers (HSTS, CSP).", "deadline": "2026-12-15", "is_completed": false, "priority": "High", "task_type": 5, "assignees": [4, 8], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 30,
+    "fields": { "name": "Fix pagination bug on large search result sets", "description": "Offset pagination slows down significantly past page 100; implement cursor-based pagination.", "deadline": "2026-12-18", "is_completed": true, "priority": "Medium", "task_type": 1, "assignees": [5, 9], "project": 1 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 31,
+    "fields": { "name": "Add export to CSV feature for financial reports", "description": "Allow accountants to download filtered transaction history tables in CSV format.", "deadline": "2026-12-20", "is_completed": false, "priority": "Low", "task_type": 2, "assignees": [6, 10], "project": 8 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 32,
+    "fields": { "name": "Resolve security vulnerability in third-party dependency", "description": "Update vulnerable cryptography library version flagged by Dependabot alert.", "deadline": "2026-12-22", "is_completed": false, "priority": "Urgent", "task_type": 1, "assignees": [7, 11], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 33,
+    "fields": { "name": "Implement real-time chat widget using WebSockets", "description": "Integrate Django Channels for instant customer support messaging.", "deadline": "2026-12-25", "is_completed": true, "priority": "High", "task_type": 2, "assignees": [8, 12], "project": 7 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 34,
+    "fields": { "name": "Refactor exception handling middleware", "description": "Standardize error response JSON payload format across all microservices.", "deadline": "2026-12-28", "is_completed": false, "priority": "Medium", "task_type": 4, "assignees": [9, 13], "project": 9 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 35,
+    "fields": { "name": "Write automated regression tests for checkout workflow", "description": "Cover edge cases like expired credit cards and network timeouts during payment.", "deadline": "2026-12-30", "is_completed": false, "priority": "High", "task_type": 5, "assignees": [10, 14], "project": 8 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 36,
+    "fields": { "name": "Fix layout shift issue on mobile header menu", "description": "Hamburger menu opening causes content jump; apply fixed positioning and smooth CSS transitions.", "deadline": "2027-01-02", "is_completed": true, "priority": "Low", "task_type": 1, "assignees": [11, 15], "project": 4 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 37,
+    "fields": { "name": "Implement bulk products import via Excel file upload", "description": "Allow store administrators to upload large product inventories using parsed Excel spreadsheets.", "deadline": "2027-01-05", "is_completed": false, "priority": "Medium", "task_type": 2, "assignees": [12, 16], "project": 6 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 38,
+    "fields": { "name": "Optimize database query performance for user search", "description": "Implement full-text search indexing using PostgreSQL tsvector for faster filtering.", "deadline": "2027-01-08", "is_completed": false, "priority": "High", "task_type": 4, "assignees": [13, 17], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 39,
+    "fields": { "name": "Configure firewall rules and security groups on AWS", "description": "Restrict database access strictly to application cluster internal IPs.", "deadline": "2027-01-10", "is_completed": true, "priority": "Urgent", "task_type": 5, "assignees": [14, 18], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 40,
+    "fields": { "name": "Fix bug with email notifications not being sent", "description": "SMTP connection timeout causes registration emails to fail silently; add retry mechanism with exponential backoff.", "deadline": "2027-01-12", "is_completed": false, "priority": "High", "task_type": 1, "assignees": [15, 19], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 41,
+    "fields": { "name": "Implement two-factor authentication (2FA) via TOTP", "description": "Add support for Google Authenticator code verification during login for enhanced account security.", "deadline": "2027-01-15", "is_completed": false, "priority": "High", "task_type": 2, "assignees": [16, 20], "project": 3 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 42,
+    "fields": { "name": "Refactor frontend component architecture", "description": "Break down monolith dashboard component into smaller reusable React functional components.", "deadline": "2027-01-18", "is_completed": true, "priority": "Medium", "task_type": 4, "assignees": [17, 21], "project": 5 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 43,
+    "fields": { "name": "Write API documentation using Swagger/OpenAPI", "description": "Document all REST endpoints, request parameters, and response schemas using drf-spectacular.", "deadline": "2027-01-20", "is_completed": false, "priority": "Low", "task_type": 5, "assignees": [18, 22], "project": 9 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 44,
+    "fields": { "name": "Fix styling bug in cross-browser flexbox layout", "description": "Safari browser renders flex container items incorrectly due to missing vendor prefixes.", "deadline": "2027-01-22", "is_completed": false, "priority": "Medium", "task_type": 1, "assignees": [19, 23], "project": 4 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 45,
+    "fields": { "name": "Implement automated database migration checks in CI", "description": "Fail build if pending Django migrations exist without corresponding python manage.py makemigrations check.", "deadline": "2027-01-25", "is_completed": true, "priority": "High", "task_type": 5, "assignees": [20, 24], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 46,
+    "fields": { "name": "Add user activity logging audit trail", "description": "Record critical administrative actions (user bans, permission changes) with timestamps and IP addresses.", "deadline": "2027-01-28", "is_completed": false, "priority": "Medium", "task_type": 2, "assignees": [21, 25], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 47,
+    "fields": { "name": "Fix crash when uploading corrupted PDF invoices", "description": "PyPDF2 library throws unhandled EOFError on malformed files; wrap in try-except block.", "deadline": "2027-01-30", "is_completed": false, "priority": "High", "task_type": 1, "assignees": [22, 1], "project": 8 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 48,
+    "fields": { "name": "Refactor celery task retry configuration", "description": "Set appropriate max_retries and countdown parameters for flaky external API requests.", "deadline": "2027-02-02", "is_completed": true, "priority": "Low", "task_type": 4, "assignees": [23, 2], "project": 6 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 49,
+    "fields": { "name": "Implement coupon code validation service", "description": "Validate expiration dates, usage limits, and minimum cart amounts for promo codes.", "deadline": "2027-02-05", "is_completed": false, "priority": "Medium", "task_type": 2, "assignees": [24, 3], "project": 1 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 50,
+    "fields": { "name": "Setup log rotation for application log files", "description": "Configure logrotate service to prevent disk space exhaustion on production servers.", "deadline": "2027-02-08", "is_completed": false, "priority": "High", "task_type": 5, "assignees": [25, 4], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 51,
+    "fields": { "name": "Fix incorrect currency formatting on product prices", "description": "Prices are displayed without proper decimal separators for regional locales.", "deadline": "2027-02-10", "is_completed": true, "priority": "Low", "task_type": 1, "assignees": [1, 5], "project": 1 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 52,
+    "fields": { "name": "Implement user profile picture cropping tool", "description": "Add frontend image cropping interface before uploading avatar to cloud storage.", "deadline": "2027-02-12", "is_completed": false, "priority": "Medium", "task_type": 2, "assignees": [2, 6], "project": 3 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 53,
+    "fields": { "name": "Refactor database models to use UUID primary keys", "description": "Replace sequential integer IDs with UUIDv4 across user and order models for security.", "deadline": "2027-02-15", "is_completed": false, "priority": "Urgent", "task_type": 3, "assignees": [3, 7], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 54,
+    "fields": { "name": "Write stress tests using Locust load testing tool", "description": "Simulate 500 concurrent users browsing catalog and placing orders simultaneously.", "deadline": "2027-02-18", "is_completed": true, "priority": "High", "task_type": 5, "assignees": [4, 8], "project": 1 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 55,
+    "fields": { "name": "Fix session expiration handling on frontend client", "description": "Client app hangs indefinitely when session cookie expires; redirect user to login page gracefully.", "deadline": "2027-02-20", "is_completed": false, "priority": "High", "task_type": 1, "assignees": [5, 9], "project": 3 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 56,
+    "fields": { "name": "Implement webhook signature verification", "description": "Validate HMAC SHA-256 signatures on incoming webhook payloads to prevent spoofing attacks.", "deadline": "2027-02-22", "is_completed": false, "priority": "Urgent", "task_type": 2, "assignees": [6, 10], "project": 8 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 57,
+    "fields": { "name": "Optimize frontend bundle size using code splitting", "description": "Implement lazy loading for route components to reduce initial page load time.", "deadline": "2027-02-25", "is_completed": true, "priority": "Medium", "task_type": 4, "assignees": [7, 11], "project": 4 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 58,
+    "fields": { "name": "Fix broken password reset token generation", "description": "Password reset links expire prematurely due to timezone mismatch between server and database.", "deadline": "2027-02-28", "is_completed": false, "priority": "Urgent", "task_type": 1, "assignees": [8, 12], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 59,
+    "fields": { "name": "Add automated database cleanup for expired sessions", "description": "Create management command to purge old django_session records daily.", "deadline": "2027-03-02", "is_completed": false, "priority": "Low", "task_type": 4, "assignees": [9, 13], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 60,
+    "fields": { "name": "Configure Prometheus metrics exporter for Django", "description": "Expose application performance metrics and HTTP request latency histograms.", "deadline": "2027-03-05", "is_completed": true, "priority": "High", "task_type": 5, "assignees": [10, 14], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 61,
+    "fields": { "name": "Fix search filter bug with empty query parameters", "description": "Passing empty string parameters returns 500 error instead of ignoring the filter clause.", "deadline": "2027-03-08", "is_completed": false, "priority": "Medium", "task_type": 1, "assignees": [11, 15], "project": 5 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 62,
+    "fields": { "name": "Implement multi-currency conversion service", "description": "Fetch daily exchange rates from external API and convert cart totals dynamically.", "deadline": "2027-03-10", "is_completed": false, "priority": "High", "task_type": 2, "assignees": [12, 16], "project": 8 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 63,
+    "fields": { "name": "Refactor permission classes in Django REST Framework", "description": "Consolidate custom IsOwnerOrReadOnly permissions into clean modular classes.", "deadline": "2027-03-12", "is_completed": true, "priority": "Low", "task_type": 4, "assignees": [13, 17], "project": 9 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 64,
+    "fields": { "name": "Fix accessibility issues on navigation menu", "description": "Add missing ARIA labels and keyboard navigation support for screen readers.", "deadline": "2027-03-15", "is_completed": false, "priority": "Medium", "task_type": 1, "assignees": [14, 18], "project": 4 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 65,
+    "fields": { "name": "Implement automated backup verification script", "description": "Periodically restore database backups to staging environment to ensure data integrity.", "deadline": "2027-03-18", "is_completed": false, "priority": "High", "task_type": 5, "assignees": [15, 19], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 66,
+    "fields": { "name": "Fix bug with order status synchronization", "description": "Webhook failure leaves order marked as pending even after successful payment confirmation.", "deadline": "2027-03-20", "is_completed": true, "priority": "Urgent", "task_type": 1, "assignees": [16, 20], "project": 8 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 67,
+    "fields": { "name": "Add sorting options to product catalog API", "description": "Support sorting query parameters by price, rating, and creation date.", "deadline": "2027-03-22", "is_completed": false, "priority": "Medium", "task_type": 2, "assignees": [17, 21], "project": 1 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 68,
+    "fields": { "name": "Refactor caching layer to use Redis cluster", "description": "Migrate single-node Redis instance to high-availability Redis cluster setup.", "deadline": "2027-03-25", "is_completed": false, "priority": "High", "task_type": 4, "assignees": [18, 22], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 69,
+    "fields": { "name": "Write unit tests for custom validation functions", "description": "Test phone number and tax ID validators against invalid formats.", "deadline": "2027-03-28", "is_completed": true, "priority": "Low", "task_type": 5, "assignees": [19, 23], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 70,
+    "fields": { "name": "Fix visual bug on tooltip overflow in tables", "description": "Tooltips get clipped by parent table container overflow settings; adjust absolute positioning.", "deadline": "2027-03-30", "is_completed": false, "priority": "Low", "task_type": 1, "assignees": [20, 24], "project": 5 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 71,
+    "fields": { "name": "Implement push notifications via Firebase Cloud Messaging", "description": "Send promotional push notifications to mobile app users based on preferences.", "deadline": "2027-04-02", "is_completed": false, "priority": "Medium", "task_type": 2, "assignees": [21, 25], "project": 3 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 72,
+    "fields": { "name": "Fix SQL injection vulnerability in search filter", "description": "Raw SQL query string interpolation found during security audit; replace with Django ORM expressions.", "deadline": "2027-04-05", "is_completed": true, "priority": "Urgent", "task_type": 1, "assignees": [22, 1], "project": 9 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 73,
+    "fields": { "name": "Refactor error logging formatting across services", "description": "Standardize log output structure to JSON format for better parsing in ELK stack.", "deadline": "2027-04-08", "is_completed": false, "priority": "Medium", "task_type": 4, "assignees": [23, 2], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 74,
+    "fields": { "name": "Write integration tests for payment processing flow", "description": "Test complete checkout lifecycle with mocked payment gateway responses.", "deadline": "2027-04-10", "is_completed": false, "priority": "High", "task_type": 5, "assignees": [24, 3], "project": 8 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 75,
+    "fields": { "name": "Fix bug with user avatar deletion failing", "description": "Removing avatar updates database record but leaves orphan file in S3 bucket; add cleanup routine.", "deadline": "2027-04-12", "is_completed": true, "priority": "Medium", "task_type": 1, "assignees": [25, 4], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 76,
+    "fields": { "name": "Implement rate limiting middleware for login endpoints", "description": "Prevent brute-force password guessing attacks by locking accounts after 5 failed attempts.", "deadline": "2027-04-15", "is_completed": false, "priority": "Urgent", "task_type": 2, "assignees": [1, 5], "project": 9 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 77,
+    "fields": { "name": "Optimize database index coverage for slow queries", "description": "Analyze slow query logs and create missing indexes on foreign key columns.", "deadline": "2027-04-18", "is_completed": false, "priority": "High", "task_type": 4, "assignees": [2, 6], "project": 6 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 78,
+    "fields": { "name": "Fix layout bug in modal dialog on small screens", "description": "Modal content overflows viewport height without inner scrollbar; add overflow-y auto.", "deadline": "2027-04-20", "is_completed": true, "priority": "Low", "task_type": 1, "assignees": [3, 7], "project": 4 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 79,
+    "fields": { "name": "Add automated security vulnerability scanning to CI", "description": "Integrate Snyk to scan project dependencies for known vulnerabilities during build.", "deadline": "2027-04-22", "is_completed": false, "priority": "High", "task_type": 5, "assignees": [4, 8], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 80,
+    "fields": { "name": "Implement user feedback submission form", "description": "Create frontend modal and backend API endpoint for collecting bug reports from users.", "deadline": "2027-04-25", "is_completed": false, "priority": "Low", "task_type": 2, "assignees": [5, 9], "project": 7 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 81,
+    "fields": { "name": "Fix crash on invalid date format in filter query params", "description": "Malformed date strings raise ValueError instead of returning 400 Bad Request response.", "deadline": "2027-04-28", "is_completed": true, "priority": "Medium", "task_type": 1, "assignees": [6, 10], "project": 5 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 82,
+    "fields": { "name": "Refactor state management in mobile client app", "description": "Replace prop drilling with Redux Toolkit for cleaner global state handling.", "deadline": "2027-05-02", "is_completed": false, "priority": "High", "task_type": 4, "assignees": [7, 11], "project": 3 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 83,
+    "fields": { "name": "Configure horizontal pod autoscaling on Kubernetes", "description": "Scale application worker pods automatically based on CPU utilization metrics.", "deadline": "2027-05-05", "is_completed": false, "priority": "High", "task_type": 5, "assignees": [8, 12], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 84,
+    "fields": { "name": "Fix bug with cart items disappearing after refresh", "description": "Guest cart session persistence fails when anonymous user ID changes unexpectedly.", "deadline": "2027-05-08", "is_completed": true, "priority": "Urgent", "task_type": 1, "assignees": [9, 13], "project": 1 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 85,
+    "fields": { "name": "Implement audit logging for database schema changes", "description": "Track all manual database migrations and schema alterations in production environment.", "deadline": "2027-05-10", "is_completed": false, "priority": "Medium", "task_type": 2, "assignees": [10, 14], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 86,
+    "fields": { "name": "Refactor API request validation logic", "description": "Move inline request body validation rules into dedicated DRF serializers.", "deadline": "2027-05-12", "is_completed": false, "priority": "Low", "task_type": 4, "assignees": [11, 15], "project": 9 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 87,
+    "fields": { "name": "Fix broken link redirects in email templates", "description": "Password reset links point to staging domain instead of production URL in transactional emails.", "deadline": "2027-05-15", "is_completed": true, "priority": "High", "task_type": 1, "assignees": [12, 16], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 88,
+    "fields": { "name": "Implement data retention policy cleanup script", "description": "Automatically anonymize inactive user accounts after 3 years to comply with GDPR regulations.", "deadline": "2027-05-18", "is_completed": false, "priority": "Medium", "task_type": 2, "assignees": [13, 17], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 89,
+    "fields": { "name": "Write performance benchmarks for critical API endpoints", "description": "Establish baseline response times and throughput metrics using k6 testing tool.", "deadline": "2027-05-20", "is_completed": false, "priority": "High", "task_type": 5, "assignees": [14, 18], "project": 9 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 90,
+    "fields": { "name": "Fix styling glitch on button hover states", "description": "Button background color transition flickers on fast mouse movement.", "deadline": "2027-05-22", "is_completed": true, "priority": "Low", "task_type": 1, "assignees": [15, 19], "project": 4 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 91,
+    "fields": { "name": "Implement PDF invoice generation background task", "description": "Generate formatted PDF invoices asynchronously via Celery worker upon order completion.", "deadline": "2027-05-25", "is_completed": false, "priority": "Medium", "task_type": 2, "assignees": [16, 20], "project": 8 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 92,
+    "fields": { "name": "Refactor database connection pooling settings", "description": "Tune PGbouncer and Django CONN_MAX_AGE parameters to handle high connection spikes.", "deadline": "2027-05-28", "is_completed": false, "priority": "High", "task_type": 4, "assignees": [17, 21], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 93,
+    "fields": { "name": "Fix bug with inventory count mismatch after refund", "description": "Order refunds do not properly increment product stock quantities back in inventory.", "deadline": "2027-05-30", "is_completed": true, "priority": "Urgent", "task_type": 1, "assignees": [18, 22], "project": 6 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 94,
+    "fields": { "name": "Write end-to-end tests for user profile update flow", "description": "Verify form submission, validation errors, and success state updates in browser.", "deadline": "2027-06-02", "is_completed": false, "priority": "Medium", "task_type": 5, "assignees": [19, 23], "project": 2 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 95,
+    "fields": { "name": "Implement real-time notification polling fallback", "description": "Fallback to HTTP long-polling if WebSocket connection fails to establish.", "deadline": "2027-06-05", "is_completed": false, "priority": "Low", "task_type": 2, "assignees": [20, 24], "project": 7 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 96,
+    "fields": { "name": "Fix security header configuration on web server", "description": "Add missing X-Content-Type-Options and X-Frame-Options headers to HTTP responses.", "deadline": "2027-06-08", "is_completed": true, "priority": "High", "task_type": 1, "assignees": [21, 25], "project": 4 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 97,
+    "fields": { "name": "Refactor order processing state machine logic", "description": "Clean up nested conditional statements in order status transition handlers.", "deadline": "2027-06-10", "is_completed": false, "priority": "Medium", "task_type": 4, "assignees": [22, 1], "project": 8 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 98,
+    "fields": { "name": "Setup centralized log aggregation with ELK stack", "description": "Stream application and Nginx access logs to Elasticsearch for easier debugging.", "deadline": "2027-06-12", "is_completed": false, "priority": "High", "task_type": 5, "assignees": [23, 2], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 99,
+    "fields": { "name": "Fix crash on missing configuration environment variables", "description": "Application fails with confusing KeyError on startup; add proper startup validation check.", "deadline": "2027-06-15", "is_completed": true, "priority": "Urgent", "task_type": 1, "assignees": [24, 3], "project": 10 }
+  },
+  {
+    "model": "tasks.task",
+    "pk": 100,
+    "fields": { "name": "Implement product recommendation engine based on tags", "description": "Suggest related products on detail page matching shared category and tag filters.", "deadline": "2027-06-18", "is_completed": false, "priority": "Medium", "task_type": 2, "assignees": [25, 4], "project": 1 }
+  }
+]
